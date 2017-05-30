@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 5) do
     t.integer "book_id"
     t.integer "user_id"
     t.boolean "returned"
-    t.string "due_date"
+    t.datetime "due_date"
   end
 
   create_table "books", force: :cascade do |t|

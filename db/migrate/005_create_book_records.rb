@@ -4,7 +4,7 @@ class CreateBookRecords < ActiveRecord::Migration[4.2]
       t.references :book
       t.references :user
       t.boolean :returned
-      t.string :due_date
+      t.datetime :due_date
     end
   end
 end

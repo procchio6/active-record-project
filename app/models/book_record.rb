@@ -1,8 +1,5 @@
 class BookRecord < ActiveRecord::Base
-  has_many :users
-  has_many :books
-  
-  def overdue?
+  belongs_to :user
+  belongs_to :book
 
-  end
 end
